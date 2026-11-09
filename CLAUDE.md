@@ -23,10 +23,17 @@ engineers screening for internships. It should look clean, load fast, and make i
 2. Do exactly ONE unchecked roadmap item per session. Small, reviewable diffs.
 3. Work on a new branch `claude/<short-task-name>`, never commit to `main`. Open a pull request
    describing what changed and how to check it.
-4. Never invent facts about Brandon (grades, jobs, projects, dates, skills). Where content is needed,
+   - **Merge it yourself** (merge commit, after your checks pass) when it is small and low-risk:
+     a fix, cleanup, metadata, tooling or a small feature, with no new content about Brandon and no
+     `TODO(Brandon)` placeholders.
+   - **Leave it open for Brandon to review** when it is large or complex (e.g. restructuring the page,
+     replacing the stylesheet), or touches anything personal or visible about him (bio, projects,
+     skills, CV, contact details, photos). Anything you're unsure about counts as "leave it open".
+   - Say in the PR description and LOG.md entry whether you merged it or left it for review.
+5. Never invent facts about Brandon (grades, jobs, projects, dates, skills). Where content is needed,
    insert a clearly marked placeholder `<!-- TODO(Brandon): ... -->` and list it in the PR description.
-5. Never add personal data beyond what's already public on the site (no phone number, address, email
+6. Never add personal data beyond what's already public on the site (no phone number, address, email
    unless Brandon adds it himself).
-6. Items tagged `[needs Brandon]` in ROADMAP are skipped by autonomous runs.
-7. At the end, tick the item in ROADMAP.md and append a 3–5 line entry to LOG.md (date, what was done,
+7. Items tagged `[needs Brandon]` in ROADMAP are skipped by autonomous runs.
+8. At the end, tick the item in ROADMAP.md and append a 3–5 line entry to LOG.md (date, what was done,
    anything left for next time). Keep LOG.md short: when it passes ~40 entries, summarise the oldest.
