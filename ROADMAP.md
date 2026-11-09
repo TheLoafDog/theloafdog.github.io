@@ -7,7 +7,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Remove unused template files (README.txt, unused images/fonts) after confirming nothing references them; keep LICENSE/attribution
 - [x] Fix mobile scrolling: remove `window.ontouchmove = return false` (it blocks scrolling once there's more content)
 - [x] Add `<meta name="description">`, Open Graph/Twitter card tags, `lang="en"`, and a simple favicon
-- [ ] Add a GitHub Actions workflow that validates HTML and checks links on every pull request
+- [x] Add a GitHub Actions workflow that validates HTML and checks links on every pull request
 
 ## Phase 2 — Real portfolio structure
 - [ ] Turn the single splash screen into a scrolling one-page site: Hero → About → Projects → Skills → Contact (keep the hero look, add sections below)

@@ -22,3 +22,9 @@ Newest at the bottom. 3–5 lines per session.
 - Also dropped `/>` on void tags so `html-validate` passes with no errors. Description reuses the existing tagline only.
 - Merged by Claude: small and low-risk, no new facts about Brandon.
 - Next: Phase 1 item 5 (GitHub Actions HTML validation + link check).
+
+## 2026-11-09 — CI: HTML validation + link check
+- Added `.github/workflows/check.yml` (runs on PRs, pushes to `main`, and manually): `html-validate` on all HTML, then `.github/scripts/check_links.py`.
+- The link checker (stdlib Python, no deps) checks local `href`/`src`/CSS `url()` targets and in-page `#anchors`; external URLs are skipped to keep CI fast and non-flaky.
+- Merged by Claude: tooling only, no content about Brandon.
+- Next: Phase 2 item 1 (scrolling one-page structure) — will be left open for review.
