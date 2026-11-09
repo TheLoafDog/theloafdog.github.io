@@ -16,3 +16,9 @@ Newest at the bottom. 3–5 lines per session.
 - Removed the `window.ontouchmove = return false` handler from `index.html`, so touch scrolling is no longer blocked by JS.
 - Still blocking: `body { overflow: hidden; }` in `main.css` (the splash is one screen, so it's harmless today). Change it when Phase 2 item 1 adds the sections below the hero.
 - Next: Phase 1 item 4 (meta description, OG/Twitter tags, `lang="en"`, favicon).
+
+## 2026-11-09 — meta tags and favicon
+- Added `lang="en"`, a meta description, canonical URL, Open Graph and Twitter card tags (image: `bg.jpg`), and an SVG "BN" favicon (`favicon.svg`).
+- Also dropped `/>` on void tags so `html-validate` passes with no errors. Description reuses the existing tagline only.
+- Merged by Claude: small and low-risk, no new facts about Brandon.
+- Next: Phase 1 item 5 (GitHub Actions HTML validation + link check).

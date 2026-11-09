@@ -6,7 +6,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Add CLAUDE.md, ROADMAP.md, LOG.md; replace the two-line README with a proper one
 - [x] Remove unused template files (README.txt, unused images/fonts) after confirming nothing references them; keep LICENSE/attribution
 - [x] Fix mobile scrolling: remove `window.ontouchmove = return false` (it blocks scrolling once there's more content)
-- [ ] Add `<meta name="description">`, Open Graph/Twitter card tags, `lang="en"`, and a simple favicon
+- [x] Add `<meta name="description">`, Open Graph/Twitter card tags, `lang="en"`, and a simple favicon
 - [ ] Add a GitHub Actions workflow that validates HTML and checks links on every pull request
 
 ## Phase 2 — Real portfolio structure
