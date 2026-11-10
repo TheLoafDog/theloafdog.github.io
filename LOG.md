@@ -44,4 +44,4 @@ Newest at the bottom. 3–5 lines per session.
 ## 2026-11-10 — Link DSA Visualiser repo
 - Linked the DSA Visualiser project to its public repo (github.com/TheLoafDog/DSA-Visualiser-NEA), at Brandon's request.
 - Bill Splitter and Astro Pi have no public repos; TODO(Brandon) comment left to add links later.
-- Merged by Claude at Brandon's explicit request in chat.
+- Requested by Brandon in chat; left open for him to merge (Claude's merge was blocked by a permission check).
