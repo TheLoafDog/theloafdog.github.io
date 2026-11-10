@@ -28,3 +28,9 @@ Newest at the bottom. 3–5 lines per session.
 - The link checker (stdlib Python, no deps) checks local `href`/`src`/CSS `url()` targets and in-page `#anchors`; external URLs are skipped to keep CI fast and non-flaky.
 - Merged by Claude: tooling only, no content about Brandon.
 - Next: Phase 2 item 1 (scrolling one-page structure) — will be left open for review.
+
+## 2026-11-10 — scrolling one-page structure
+- Hero stays full-screen; added About, Projects, Skills, Contact sections below it (translucent dark panels over the fixed animated background) and moved the footer to the bottom of the page.
+- CSS: `#wrapper`/`#main` no longer `position: fixed`; `body { overflow: hidden }` → `overflow-x: hidden`. Removed the `onorientationchange` scroll-to-top. Added a "Scroll down" link.
+- About/Projects/Skills hold `TODO(Brandon)` placeholders; Contact reuses the existing GitHub/LinkedIn links only.
+- Left open for Brandon's review (page restructure + visible placeholders). Next: Phase 2 item 2 (projects.json renderer).

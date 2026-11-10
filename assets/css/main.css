@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -201,11 +201,9 @@ input, select, textarea {
 		-webkit-animation: wrapper 3s forwards;
 		-ms-animation: wrapper 3s forwards;
 		animation: wrapper 3s forwards;
-		height: 100%;
-		left: 0;
+		min-height: 100%;
 		opacity: 0;
-		position: fixed;
-		top: 0;
+		position: relative;
 		width: 100%;
 	}
 
@@ -367,11 +365,10 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		height: 100%;
-		left: 0;
-		position: fixed;
+		height: 100vh;
+		min-height: 24em;
+		position: relative;
 		text-align: center;
-		top: 0;
 		width: 100%;
 	}
 
@@ -712,19 +709,66 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background: rgba(0, 0, 0, 0.75);
 		bottom: 0;
 		cursor: default;
 		height: 6em;
-		left: 0;
-		line-height: 8em;
-		position: absolute;
+		line-height: 6em;
+		position: relative;
 		text-align: center;
 		width: 100%;
 	}
+
+/* Sections (below the hero) */
+
+	.section {
+		background: rgba(0, 0, 0, 0.55);
+		padding: 4em 1.5em;
+		position: relative;
+	}
+
+		.section:nth-of-type(even) {
+			background: rgba(0, 0, 0, 0.65);
+		}
+
+		.section .inner {
+			margin: 0 auto;
+			max-width: 48em;
+		}
+
+		.section h2 {
+			font-size: 2em;
+			font-weight: 900;
+			letter-spacing: -0.035em;
+			line-height: 1.2em;
+			margin: 0 0 0.75em 0;
+		}
+
+		.section p {
+			margin: 0 0 1em 0;
+		}
+
+		.section .placeholder {
+			opacity: 0.6;
+			font-style: italic;
+		}
+
+		.section .links li {
+			display: inline-block;
+			margin: 0 1em 0.5em 0;
+		}
+
+	.scroll-cue {
+		bottom: 1.5em;
+		left: 50%;
+		opacity: 0.75;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+
+		.scroll-cue:hover {
+			opacity: 1;
+		}
 
 /* Wide */
 
@@ -893,6 +937,14 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+
+		.section {
+			padding: 3em 1em;
+		}
+
+			.section h2 {
+				font-size: 1.5em;
+			}
 
 		/* Basic */
 
