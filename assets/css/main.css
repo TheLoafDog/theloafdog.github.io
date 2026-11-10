@@ -758,6 +758,24 @@ input, select, textarea {
 			margin: 0 1em 0.5em 0;
 		}
 
+		.section .cv-button {
+			border: 2px solid #fff;
+			border-radius: 0.35em;
+			color: #fff;
+			display: inline-block;
+			font-weight: 700;
+			margin-top: 0.5em;
+			padding: 0.5em 1.25em;
+			text-decoration: none;
+			transition: background-color 0.2s ease, color 0.2s ease;
+		}
+
+			.section .cv-button:hover,
+			.section .cv-button:focus-visible {
+				background: #fff;
+				color: #000;
+			}
+
 		.section h3 {
 			font-size: 1.15em;
 			font-weight: 700;
