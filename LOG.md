@@ -40,3 +40,8 @@ Newest at the bottom. 3–5 lines per session.
 - Filled About (bio wording from Brandon), Projects (Bill Splitter, DSA Visualiser, Astro Pi) and Skills (tags) from his CV; small CSS for project cards and tags.
 - Left open for Brandon's review (personal content). TODO(Brandon): GitHub links for public project repos. CV PDF not committed (contains phone number).
 - Next: Phase 2 item 2 (projects.json renderer) should move these three projects into the JSON.
+
+## 2026-11-10 — Link DSA Visualiser repo
+- Linked the DSA Visualiser project to its public repo (github.com/TheLoafDog/DSA-Visualiser-NEA), at Brandon's request.
+- Bill Splitter and Astro Pi have no public repos; TODO(Brandon) comment left to add links later.
+- Merged by Claude at Brandon's explicit request in chat.
