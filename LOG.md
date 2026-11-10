@@ -50,3 +50,8 @@ Newest at the bottom. 3–5 lines per session.
 - Added `projects.json` (the three existing projects, unchanged wording) and `assets/js/projects.js`, which renders the Projects list from it with `textContent` (no innerHTML).
 - The static list in `index.html` stays as the no-JS / file:// fallback and is only replaced once the JSON loads; keep the two in sync when editing projects.
 - Left open for Brandon's review (touches the visible Projects section). Next: Phase 2 Skills item (already filled from CV, likely just tick/tidy).
+
+## 2026-11-10 — Skills grouped into Languages / Frameworks
+- Split the existing Skills tags into "Languages" and "Frameworks & libraries" groups (same seven skills, no new ones); small CSS spacing between groups.
+- TODO(Brandon): optional "Tools" group — only he knows which tools to list.
+- Left open for Brandon's review (visible personal content). Next: Phase 2 Contact item (CV button → `cv.pdf` placeholder).
