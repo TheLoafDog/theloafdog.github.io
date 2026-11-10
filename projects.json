@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Bill Splitter App",
+		"description": "A full-stack, multi-user web app for splitting bills between groups, with authenticated login, a relational database and a Flask REST API behind a Jinja2/Bootstrap front-end.",
+		"tags": ["Flask", "SQL", "HTML/CSS"],
+		"link": null
+	},
+	{
+		"name": "Data Structures & Algorithms Visualiser",
+		"description": "An interactive learning tool for A-level students that animates tree traversals, BFS/DFS, sorts and searches step by step, with a 60-question self-test bank. A-level NEA, graded 69/75.",
+		"tags": ["Python", "Tkinter", "NetworkX"],
+		"link": "https://github.com/TheLoafDog/DSA-Visualiser-NEA"
+	},
+	{
+		"name": "Astro Pi Mission Space Lab",
+		"description": "Led a four-person team calculating the speed of the ISS from on-board imagery; an alpha mask to remove cloud-induced errors improved the calculation by 32%.",
+		"tags": ["Python", "OpenCV"],
+		"link": null
+	}
+]

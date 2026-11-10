@@ -45,3 +45,8 @@ Newest at the bottom. 3–5 lines per session.
 - Linked the DSA Visualiser project to its public repo (github.com/TheLoafDog/DSA-Visualiser-NEA), at Brandon's request.
 - Bill Splitter and Astro Pi have no public repos; TODO(Brandon) comment left to add links later.
 - Requested by Brandon in chat; left open for him to merge (Claude's merge was blocked by a permission check).
+
+## 2026-11-10 — Projects rendered from projects.json
+- Added `projects.json` (the three existing projects, unchanged wording) and `assets/js/projects.js`, which renders the Projects list from it with `textContent` (no innerHTML).
+- The static list in `index.html` stays as the no-JS / file:// fallback and is only replaced once the JSON loads; keep the two in sync when editing projects.
+- Left open for Brandon's review (touches the visible Projects section). Next: Phase 2 Skills item (already filled from CV, likely just tick/tidy).
