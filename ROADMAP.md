@@ -12,7 +12,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 ## Phase 2 — Real portfolio structure
 - [x] Turn the single splash screen into a scrolling one-page site: Hero → About → Projects → Skills → Contact (keep the hero look, add sections below)
 - [x] Projects section driven by a `projects.json` file + small JS renderer (with a no-JS fallback list)
-- [ ] Skills section (languages, frameworks, tools) as tidy tags — placeholders only
+- [x] Skills section (languages, frameworks, tools) as tidy tags — placeholders only
 - [ ] Contact section: GitHub, LinkedIn, and a "Download CV" button pointing at `cv.pdf` placeholder
 - [ ] Sticky nav with smooth-scroll links and active-section highlighting
 

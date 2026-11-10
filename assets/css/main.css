@@ -768,6 +768,10 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		.section .tags {
+			margin: 0 0 1em 0;
+		}
+
 		.section .tags li {
 			border: 1px solid rgba(255, 255, 255, 0.35);
 			border-radius: 1em;
