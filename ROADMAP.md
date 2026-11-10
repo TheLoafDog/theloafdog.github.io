@@ -10,7 +10,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Add a GitHub Actions workflow that validates HTML and checks links on every pull request
 
 ## Phase 2 — Real portfolio structure
-- [ ] Turn the single splash screen into a scrolling one-page site: Hero → About → Projects → Skills → Contact (keep the hero look, add sections below)
+- [x] Turn the single splash screen into a scrolling one-page site: Hero → About → Projects → Skills → Contact (keep the hero look, add sections below)
 - [ ] Projects section driven by a `projects.json` file + small JS renderer (with a no-JS fallback list)
 - [ ] Skills section (languages, frameworks, tools) as tidy tags — placeholders only
 - [ ] Contact section: GitHub, LinkedIn, and a "Download CV" button pointing at `cv.pdf` placeholder
