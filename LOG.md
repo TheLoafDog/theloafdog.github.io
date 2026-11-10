@@ -34,3 +34,9 @@ Newest at the bottom. 3–5 lines per session.
 - CSS: `#wrapper`/`#main` no longer `position: fixed`; `body { overflow: hidden }` → `overflow-x: hidden`. Removed the `onorientationchange` scroll-to-top. Added a "Scroll down" link.
 - About/Projects/Skills hold `TODO(Brandon)` placeholders; Contact reuses the existing GitHub/LinkedIn links only.
 - Left open for Brandon's review (page restructure + visible placeholders). Next: Phase 2 item 2 (projects.json renderer).
+
+## 2026-11-10 — Bio, projects and skills from Brandon's CV
+- Brandon approved and merged PR #6 (scrolling sections) in chat.
+- Filled About (bio wording from Brandon), Projects (Bill Splitter, DSA Visualiser, Astro Pi) and Skills (tags) from his CV; small CSS for project cards and tags.
+- Left open for Brandon's review (personal content). TODO(Brandon): GitHub links for public project repos. CV PDF not committed (contains phone number).
+- Next: Phase 2 item 2 (projects.json renderer) should move these three projects into the JSON.

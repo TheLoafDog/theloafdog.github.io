@@ -23,8 +23,8 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [ ] Replace the remaining template CSS with a lean custom stylesheet (then the HTML5 UP credit can go)
 
 ## Content — [needs Brandon]
-- [ ] [needs Brandon] Short bio (2–3 sentences): what you're interested in, what you're looking for (e.g. summer 2027 SWE internship)
-- [ ] [needs Brandon] Project list: name, one-line description, tech, link (public repos only; private ones = description + screenshots, no link)
-- [ ] [needs Brandon] Skills list
+- [x] [needs Brandon] Short bio (2–3 sentences): what you're interested in, what you're looking for (e.g. summer 2027 SWE internship)
+- [x] [needs Brandon] Project list: name, one-line description, tech, link (public repos only; private ones = description + screenshots, no link)
+- [x] [needs Brandon] Skills list
 - [ ] [needs Brandon] CV as `cv.pdf` (check it has no phone number/home address before committing)
 - [ ] [needs Brandon] Custom domain? (optional)

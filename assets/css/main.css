@@ -758,6 +758,25 @@ input, select, textarea {
 			margin: 0 1em 0.5em 0;
 		}
 
+		.section h3 {
+			font-size: 1.15em;
+			font-weight: 700;
+			margin: 0 0 0.35em 0;
+		}
+
+		.section .projects > li {
+			margin: 0 0 2em 0;
+		}
+
+		.section .tags li {
+			border: 1px solid rgba(255, 255, 255, 0.35);
+			border-radius: 1em;
+			display: inline-block;
+			font-size: 0.8em;
+			margin: 0 0.4em 0.4em 0;
+			padding: 0.1em 0.8em;
+		}
+
 	.scroll-cue {
 		bottom: 1.5em;
 		left: 50%;
