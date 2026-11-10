@@ -55,3 +55,7 @@ Newest at the bottom. 3–5 lines per session.
 - Split the existing Skills tags into "Languages" and "Frameworks & libraries" groups (same seven skills, no new ones); small CSS spacing between groups.
 - TODO(Brandon): optional "Tools" group — only he knows which tools to list.
 - Left open for Brandon's review (visible personal content). Next: Phase 2 Contact item (CV button → `cv.pdf` placeholder).
+
+## 2026-11-10 — Skills: Tools group
+- At Brandon's request, added a "Tools" group (GitHub, Linux, VS Code, PostgreSQL, Bash & command line (basics)) and SQLAlchemy to Frameworks & libraries; removed the Tools TODO.
+- Left open for Brandon's review (personal content). Next: Phase 2 Contact item.
