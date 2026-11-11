@@ -13,7 +13,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Turn the single splash screen into a scrolling one-page site: Hero → About → Projects → Skills → Contact (keep the hero look, add sections below)
 - [x] Projects section driven by a `projects.json` file + small JS renderer (with a no-JS fallback list)
 - [x] Skills section (languages, frameworks, tools) as tidy tags — placeholders only
-- [ ] Contact section: GitHub, LinkedIn, and a "Download CV" button pointing at `cv.pdf` placeholder
+- [x] Contact section: GitHub, LinkedIn, and a "Download CV" button pointing at `cv.pdf` placeholder
 - [ ] Sticky nav with smooth-scroll links and active-section highlighting
 
 ## Phase 3 — Polish

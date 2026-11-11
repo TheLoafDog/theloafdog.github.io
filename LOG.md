@@ -59,3 +59,8 @@ Newest at the bottom. 3–5 lines per session.
 ## 2026-11-10 — Skills: Tools group
 - At Brandon's request, added a "Tools" group (GitHub, Linux, VS Code, PostgreSQL, Bash & command line (basics)) and SQLAlchemy to Frameworks & libraries; removed the Tools TODO.
 - Left open for Brandon's review (personal content). Next: Phase 2 Contact item.
+
+## 2026-11-10 — Contact: icons + CV button (hidden)
+- Added GitHub/LinkedIn icons to the Contact links and a styled "Download CV (PDF)" button pointing at `cv.pdf`.
+- The button is commented out until `cv.pdf` exists (avoids a 404 and a failing CI link check). TODO(Brandon): add `cv.pdf`, then uncomment.
+- Left open for Brandon's review (visible contact/CV content). Next: Phase 2 sticky nav item.
