@@ -6,12 +6,13 @@ Live at **https://theloafdog.github.io**
 
 ## Tech
 - Static HTML/CSS/JS hosted on GitHub Pages, no build step
-- Based on the [Aerial](https://html5up.net/aerial) template by HTML5 UP (CCA 3.0), being progressively replaced with custom code
+- One hand-written stylesheet (`assets/css/main.css`); the look was originally based on the [Aerial](https://html5up.net/aerial) template by HTML5 UP, whose code has now been fully replaced
 
 ## Credits
-- Design: [Aerial](https://html5up.net/aerial) by HTML5 UP, CCA 3.0 (see `LICENSE.txt`)
+- Design inspired by [Aerial](https://html5up.net/aerial) by HTML5 UP (no template code remains)
 - Background image: "Icefields" by Ryan Schroeder via Unsplash (CC0)
 - Icons: [Font Awesome](https://fontawesome.com)
+- Font: Source Sans Pro (SIL OFL 1.1, see `assets/fonts/OFL.txt`)
 
 ## Run locally
 ```bash
