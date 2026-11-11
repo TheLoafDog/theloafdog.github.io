@@ -64,3 +64,8 @@ Newest at the bottom. 3–5 lines per session.
 - Added GitHub/LinkedIn icons to the Contact links and a styled "Download CV (PDF)" button pointing at `cv.pdf`.
 - The button is commented out until `cv.pdf` exists (avoids a 404 and a failing CI link check). TODO(Brandon): add `cv.pdf`, then uncomment.
 - Left open for Brandon's review (visible contact/CV content). Next: Phase 2 sticky nav item.
+
+## 2026-11-11 — Sticky nav
+- Added a fixed top nav (Home, About, Projects, Skills, Contact) with CSS smooth scrolling (off for reduced-motion) and scroll-margin so headings are not hidden.
+- New `assets/js/nav.js` highlights the current section (IntersectionObserver, aria-current); links still work without JS. Labelled the header social nav for the unique-landmark rule.
+- Checked: html-validate, link check, desktop + 375px screenshots, no console errors. Merged by Claude in an interactive session at Brandon's request. Next: Phase 3 dark/light toggle.
