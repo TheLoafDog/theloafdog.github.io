@@ -709,7 +709,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: rgba(0, 0, 0, 0.75);
+		background: var(--footer-bg);
+		color: var(--section-text);
 		bottom: 0;
 		cursor: default;
 		height: 6em;
@@ -722,13 +723,14 @@ input, select, textarea {
 /* Sections (below the hero) */
 
 	.section {
-		background: rgba(0, 0, 0, 0.55);
+		background: var(--section-bg);
+		color: var(--section-text);
 		padding: 4em 1.5em;
 		position: relative;
 	}
 
 		.section:nth-of-type(even) {
-			background: rgba(0, 0, 0, 0.65);
+			background: var(--section-bg-alt);
 		}
 
 		.section .inner {
@@ -759,9 +761,9 @@ input, select, textarea {
 		}
 
 		.section .cv-button {
-			border: 2px solid #fff;
+			border: 2px solid var(--section-text);
 			border-radius: 0.35em;
-			color: #fff;
+			color: var(--section-text);
 			display: inline-block;
 			font-weight: 700;
 			margin-top: 0.5em;
@@ -772,8 +774,8 @@ input, select, textarea {
 
 			.section .cv-button:hover,
 			.section .cv-button:focus-visible {
-				background: #fff;
-				color: #000;
+				background: var(--section-text);
+				color: var(--section-bg-solid);
 			}
 
 		.section h3 {
@@ -791,7 +793,7 @@ input, select, textarea {
 		}
 
 		.section .tags li {
-			border: 1px solid rgba(255, 255, 255, 0.35);
+			border: 1px solid var(--tag-border);
 			border-radius: 1em;
 			display: inline-block;
 			font-size: 0.8em;
@@ -831,7 +833,8 @@ input, select, textarea {
 	#site-nav {
 		-webkit-backdrop-filter: blur(6px);
 		backdrop-filter: blur(6px);
-		background: rgba(0, 0, 0, 0.6);
+		background: var(--nav-bg);
+		display: flex;
 		left: 0;
 		position: fixed;
 		top: 0;
@@ -842,6 +845,7 @@ input, select, textarea {
 		#site-nav ul {
 			display: flex;
 			gap: 0.25em;
+			flex: 1 1 auto;
 			justify-content: center;
 			list-style: none;
 			margin: 0;
@@ -852,7 +856,7 @@ input, select, textarea {
 
 		#site-nav a {
 			border-bottom: 2px solid transparent;
-			color: rgba(255, 255, 255, 0.75);
+			color: var(--nav-link);
 			display: block;
 			font-size: 0.85em;
 			font-weight: 700;
@@ -866,13 +870,71 @@ input, select, textarea {
 
 			#site-nav a:hover,
 			#site-nav a:focus-visible {
-				color: #fff;
+				color: var(--section-text);
 			}
 
 			#site-nav a.is-active {
-				border-bottom-color: #fff;
-				color: #fff;
+				border-bottom-color: var(--section-text);
+				color: var(--section-text);
 			}
+
+/* Colour theme: dark is the default; light follows prefers-color-scheme unless the
+   visitor picked one with the toggle (assets/js/theme.js sets data-theme on <html>).
+   The hero keeps its sky background in both themes. */
+
+	:root {
+		color-scheme: dark;
+		--section-bg: rgba(0, 0, 0, 0.55);
+		--section-bg-alt: rgba(0, 0, 0, 0.65);
+		--section-bg-solid: #000;
+		--section-text: #fff;
+		--tag-border: rgba(255, 255, 255, 0.35);
+		--footer-bg: rgba(0, 0, 0, 0.75);
+		--nav-bg: rgba(0, 0, 0, 0.6);
+		--nav-link: rgba(255, 255, 255, 0.75);
+	}
+
+	:root[data-theme="light"] {
+		color-scheme: light;
+		--section-bg: rgba(255, 255, 255, 0.9);
+		--section-bg-alt: rgba(240, 244, 248, 0.92);
+		--section-bg-solid: #fff;
+		--section-text: #1f2933;
+		--tag-border: rgba(31, 41, 51, 0.4);
+		--footer-bg: rgba(255, 255, 255, 0.92);
+		--nav-bg: rgba(255, 255, 255, 0.8);
+		--nav-link: rgba(31, 41, 51, 0.8);
+	}
+
+	@media (prefers-color-scheme: light) {
+		:root:not([data-theme="dark"]) {
+			color-scheme: light;
+			--section-bg: rgba(255, 255, 255, 0.9);
+			--section-bg-alt: rgba(240, 244, 248, 0.92);
+			--section-bg-solid: #fff;
+			--section-text: #1f2933;
+			--tag-border: rgba(31, 41, 51, 0.4);
+			--footer-bg: rgba(255, 255, 255, 0.92);
+			--nav-bg: rgba(255, 255, 255, 0.8);
+			--nav-link: rgba(31, 41, 51, 0.8);
+		}
+	}
+
+	#theme-toggle {
+		background: none;
+		border: 0;
+		color: var(--nav-link);
+		cursor: pointer;
+		flex: 0 0 auto;
+		font-size: 1em;
+		padding: 0 1em;
+		transition: color 0.2s ease;
+	}
+
+		#theme-toggle:hover,
+		#theme-toggle:focus-visible {
+			color: var(--section-text);
+		}
 
 /* Wide */
 
