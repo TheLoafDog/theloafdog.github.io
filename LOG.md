@@ -84,3 +84,8 @@ Newest at the bottom. 3–5 lines per session.
 - Dropped the Google Fonts `@import`; Source Sans Pro 300/900 (latin woff2, ~29 KB total, OFL in `assets/fonts/OFL.txt`) is self-hosted with `font-display: swap` and preloaded. Font Awesome is now a `<link>` instead of a chained `@import`. The page makes no third-party requests.
 - Re-encoded `bg.jpg` (same 1500×500, progressive, q70): 238 KB → 123 KB.
 - Checked: html-validate, link check, desktop + 375px screenshots, no console errors or failed requests. Lighthouse would not run in the sandbox (NO_FCP in headless), so the score is unmeasured. Merged by Claude (small, no personal content). Next: lean custom stylesheet. The template's multi-second hero fade-in will hold back LCP until it is replaced.
+
+## 2026-11-11 — Lean custom stylesheet
+- Rewrote `assets/css/main.css` by hand (28 KB → 10 KB): no reset/vendor prefixes, one CSS-variable-driven sky-scroll keyframe instead of 16, hero overlay drawn with CSS gradients, header fades in over 0.8s instead of ~3s, animations off under `prefers-reduced-motion`.
+- Removed the remaining template files (`assets/sass/`, `noscript.css`, overlay images, `LICENSE.txt`), the `is-preload` script and the HTML5 UP footer credit; README keeps an "inspired by Aerial" note. bg.jpg is CC0 (Unsplash), so nothing CCA-licensed remains.
+- Checked: html-validate, link check, side-by-side screenshots vs main (desktop dark, 375px light), both themes, no-JS, no console errors or horizontal scroll. Left open for Brandon's review (stylesheet replacement + visible credit change). Next: only `[needs Brandon]` items remain (cv.pdf, custom domain).

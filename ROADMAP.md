@@ -20,7 +20,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Dark/light mode toggle respecting `prefers-color-scheme`
 - [x] Accessibility pass: contrast, alt text, focus styles, skip link, semantic landmarks
 - [x] Performance pass: self-host or drop the Google Fonts import, compress bg.jpg, aim for Lighthouse 95+
-- [ ] Replace the remaining template CSS with a lean custom stylesheet (then the HTML5 UP credit can go)
+- [x] Replace the remaining template CSS with a lean custom stylesheet (then the HTML5 UP credit can go)
 
 ## Content — [needs Brandon]
 - [x] [needs Brandon] Short bio (2–3 sentences): what you're interested in, what you're looking for (e.g. summer 2027 SWE internship)

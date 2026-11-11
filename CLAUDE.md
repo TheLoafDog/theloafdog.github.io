@@ -7,9 +7,8 @@ engineers screening for internships. It should look clean, load fast, and make i
 ## Stack
 - Plain static HTML/CSS/JS, served by GitHub Pages from `main` (root). No build step, no frameworks,
   no npm dependencies at runtime. Keep it that way unless ROADMAP says otherwise.
-- Current design is the HTML5 UP "Aerial" template (CCA 3.0 — attribution required while any of it is
-  used; keep the footer credit until the template is fully replaced).
-- `assets/sass/` is the template's source; `assets/css/main.css` is what's actually served.
+- Styling is one hand-written stylesheet, `assets/css/main.css` (theme colours are CSS variables at the top).
+  The HTML5 UP "Aerial" template it started from has been fully replaced, so no attribution is required.
   Edit the CSS directly; don't introduce a Sass build.
 
 ## How to check your work

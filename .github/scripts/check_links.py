@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
-SKIP_DIRS = {".git", "node_modules", "assets/sass"}
+SKIP_DIRS = {".git", "node_modules"}
 ATTRS = {"href", "src", "srcset", "poster", "data-src"}
 CSS_URL = re.compile(r"url\(\s*['\"]?([^'\")]+)['\"]?\s*\)")
 
