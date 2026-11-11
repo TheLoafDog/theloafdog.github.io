@@ -79,3 +79,8 @@ Newest at the bottom. 3–5 lines per session.
 - Added a "Skip to content" link and a `<main id="content">` landmark around the sections; visible `:focus-visible` outlines (template had `outline: 0`); allowed pinch-zoom (dropped `user-scalable=no`).
 - Hero GitHub/LinkedIn icon links now have accessible names (labels were `display: none`); decorative bg/overlay and the duplicate "Scroll down" cue hidden from assistive tech.
 - Checked: html-validate, local link check, axe-core (WCAG A/AA + best practice) clean in dark/light and at 375px, no new console errors. Merged by Claude (small, no personal content). Next: Phase 3 performance pass.
+
+## 2026-11-11 — Performance pass
+- Dropped the Google Fonts `@import`; Source Sans Pro 300/900 (latin woff2, ~29 KB total, OFL in `assets/fonts/OFL.txt`) is self-hosted with `font-display: swap` and preloaded. Font Awesome is now a `<link>` instead of a chained `@import`. The page makes no third-party requests.
+- Re-encoded `bg.jpg` (same 1500×500, progressive, q70): 238 KB → 123 KB.
+- Checked: html-validate, link check, desktop + 375px screenshots, no console errors or failed requests. Lighthouse would not run in the sandbox (NO_FCP in headless), so the score is unmeasured. Merged by Claude (small, no personal content). Next: lean custom stylesheet. The template's multi-second hero fade-in will hold back LCP until it is replaced.
