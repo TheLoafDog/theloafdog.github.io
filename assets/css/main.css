@@ -143,7 +143,16 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			/* Visually hidden but still read by screen readers (the link's accessible name). */
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
 		}
 
 		.icon.solid:before {
@@ -702,9 +711,6 @@ input, select, textarea {
 						color: #fff;
 					}
 
-				#header nav a span {
-					display: none;
-				}
 
 /* Footer */
 
@@ -813,6 +819,36 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+/* Accessibility: visible keyboard focus and a skip link */
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 3px;
+	}
+
+	#content:focus {
+		outline: 0;
+	}
+
+	.skip-link {
+		background: #000;
+		border: 2px solid #fff;
+		border-radius: 0.35em;
+		color: #fff;
+		font-weight: 700;
+		left: 0.5em;
+		padding: 0.5em 1em;
+		position: fixed;
+		top: 0.5em;
+		transform: translateY(-200%);
+		z-index: 100;
+	}
+
+		.skip-link:focus {
+			transform: none;
+		}
+
 /* Site nav (fixed, smooth scroll, active section) */
 
 	html {
@@ -826,6 +862,7 @@ input, select, textarea {
 	}
 
 	#main,
+	#content,
 	.section {
 		scroll-margin-top: 3em;
 	}

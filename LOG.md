@@ -74,3 +74,8 @@ Newest at the bottom. 3–5 lines per session.
 - Section/nav/footer colours now use CSS variables; light theme follows `prefers-color-scheme` (works without JS), hero keeps its sky look.
 - New `assets/js/theme.js` (loaded in head, no flash) adds a sun/moon toggle to the nav and remembers the choice in localStorage.
 - Checked: html-validate, link check, desktop + 375px in both themes, toggle persists across reloads, no-JS fallback. Merged by Claude (small, no personal content). Next: Phase 3 accessibility pass.
+
+## 2026-11-11 — Accessibility pass
+- Added a "Skip to content" link and a `<main id="content">` landmark around the sections; visible `:focus-visible` outlines (template had `outline: 0`); allowed pinch-zoom (dropped `user-scalable=no`).
+- Hero GitHub/LinkedIn icon links now have accessible names (labels were `display: none`); decorative bg/overlay and the duplicate "Scroll down" cue hidden from assistive tech.
+- Checked: html-validate, local link check, axe-core (WCAG A/AA + best practice) clean in dark/light and at 375px, no new console errors. Merged by Claude (small, no personal content). Next: Phase 3 performance pass.
