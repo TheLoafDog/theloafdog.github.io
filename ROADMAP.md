@@ -14,7 +14,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Projects section driven by a `projects.json` file + small JS renderer (with a no-JS fallback list)
 - [x] Skills section (languages, frameworks, tools) as tidy tags — placeholders only
 - [x] Contact section: GitHub, LinkedIn, and a "Download CV" button pointing at `cv.pdf` placeholder
-- [ ] Sticky nav with smooth-scroll links and active-section highlighting
+- [x] Sticky nav with smooth-scroll links and active-section highlighting
 
 ## Phase 3 — Polish
 - [ ] Dark/light mode toggle respecting `prefers-color-scheme`
