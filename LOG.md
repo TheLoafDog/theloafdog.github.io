@@ -69,3 +69,8 @@ Newest at the bottom. 3–5 lines per session.
 - Added a fixed top nav (Home, About, Projects, Skills, Contact) with CSS smooth scrolling (off for reduced-motion) and scroll-margin so headings are not hidden.
 - New `assets/js/nav.js` highlights the current section (IntersectionObserver, aria-current); links still work without JS. Labelled the header social nav for the unique-landmark rule.
 - Checked: html-validate, link check, desktop + 375px screenshots, no console errors. Merged by Claude in an interactive session at Brandon's request. Next: Phase 3 dark/light toggle.
+
+## 2026-11-11 — Dark/light toggle
+- Section/nav/footer colours now use CSS variables; light theme follows `prefers-color-scheme` (works without JS), hero keeps its sky look.
+- New `assets/js/theme.js` (loaded in head, no flash) adds a sun/moon toggle to the nav and remembers the choice in localStorage.
+- Checked: html-validate, link check, desktop + 375px in both themes, toggle persists across reloads, no-JS fallback. Merged by Claude (small, no personal content). Next: Phase 3 accessibility pass.

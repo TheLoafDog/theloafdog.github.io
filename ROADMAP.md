@@ -17,7 +17,7 @@ Work top to bottom. One item per session. `[needs Brandon]` = skip in autonomous
 - [x] Sticky nav with smooth-scroll links and active-section highlighting
 
 ## Phase 3 — Polish
-- [ ] Dark/light mode toggle respecting `prefers-color-scheme`
+- [x] Dark/light mode toggle respecting `prefers-color-scheme`
 - [ ] Accessibility pass: contrast, alt text, focus styles, skip link, semantic landmarks
 - [ ] Performance pass: self-host or drop the Google Fonts import, compress bg.jpg, aim for Lighthouse 95+
 - [ ] Replace the remaining template CSS with a lean custom stylesheet (then the HTML5 UP credit can go)
